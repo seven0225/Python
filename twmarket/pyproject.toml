@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twmarket"
+version = "0.1.0"
+description = "台灣市場交易規則與選擇權定價的參考實作（僅使用標準函式庫）"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["twmarket"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
